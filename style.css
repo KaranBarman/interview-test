@@ -303,3 +303,79 @@ tr {
     gap: 5px;
   }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+html {
+  font-size: 10px;
+}
+
+/* Add a general style for mobile devices */
+@media (max-width: 767px) {
+  .max-width {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .features {
+    flex-direction: column; /* Stack features vertically on small screens */
+    gap: 20px;
+  }
+
+  .feature {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .categories {
+    margin-top: 20px;
+  }
+
+  .category {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  #category-card-1,
+  #category-card-2 {
+    width: 100%;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  tr {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .th-heading {
+    margin-left: 0; /* Adjust margin for smaller screens */
+  }
+
+  .th-btn {
+    margin-left: 0;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  .btn-secondary {
+    margin-top: 20px;
+  }
+}
+
+/* Add additional media queries for larger screens if needed */
+@media (min-width: 768px) {
+  /* Add styles for tablets */
+}
+
+@media (min-width: 992px) {
+  /* Add styles for desktops */
+}
+
+@media (min-width: 1200px) {
+  /* Add styles for larger desktops */
+}
